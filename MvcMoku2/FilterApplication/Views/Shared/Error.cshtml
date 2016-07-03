@@ -1,0 +1,12 @@
+﻿@model FilterApplication.Models.ViewModel.ErrorViewModel
+
+<dl class="dl-horizontal">
+	<dt>Controller</dt>
+	<dd>@Model.ErrorInfo.ControllerName</dd>
+	<dt>Action</dt>
+	<dd>@Model.ErrorInfo.ActionName</dd>
+	<dt>例外</dt>
+	<dd>
+		<pre>@Model.ErrorInfo.Exception.ToString()</pre>
+	</dd>
+</dl>
